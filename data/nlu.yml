@@ -337,6 +337,7 @@ nlu:
       - how much carbohydrates in [267](quantity) [g](unit) of [sweet potato](food)? 
       - how much carbs in [144](quantity) [g](unit) of [quinoa](food)? 
       - carbs in [400](quantity) [g](unit) of [potato](food)?
+      - how much carbs in [200](quantity) [g](unit) of [digestive biscuits](food)?
   
 
   - intent: ask_fats
