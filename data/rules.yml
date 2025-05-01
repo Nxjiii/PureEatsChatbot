@@ -1,0 +1,58 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Respond to thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - rule: Respond to out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+
+  - rule: Handle ask question permission
+    steps:
+      - intent: ask_question_permission
+      - action: utter_reply_question_permission
+
+  - rule: Handle How are you
+    steps:
+      - intent: ask_how_you_are
+      - action: utter_reply_how_you_are
+
+  - rule: Handle end formalities
+    steps:
+      - intent: respond_to_how_you_are
+      - action: utter_end_formalities
+
+  - rule: Respond to ask calories
+    steps:
+      - intent: ask_calories
+      - action: action_get_calories
+
+  - rule: Respond to ask protein
+    steps:
+      - intent: ask_protein
+      - action: action_get_protein
+
+  - rule: Respond to ask carbs
+    steps:
+      - intent: ask_carbs
+      - action: action_get_carbs
+
+  - rule: Respond to ask fats
+    steps:
+      - intent: ask_fats
+      - action: action_get_fats

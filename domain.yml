@@ -1,0 +1,228 @@
+ersion: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - out_of_scope
+  - ask_calories
+  - ask_protein
+  - ask_carbs
+  - ask_fats
+  - ask_question_permission
+  - ask_how_you_are
+  - respond_to_how_you_are
+
+entities:
+  - food
+  - quantity
+  - unit
+
+actions:
+  - action_get_calories
+  - action_get_protein
+  - action_get_carbs
+  - action_get_fats
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you today?"
+  - text: "Hello! What can I assist you with today?"
+  - text: "Hi there! How can I help you today?"
+  - text: "Hey! What can I do for you today?"
+  - text: "Good day! How can I be of service?"
+  - text: "Hi! What can I help you with today?"
+  - text: "Hello! What do you need assistance with?"
+  - text: "Greetings! How may I assist you today?"
+  - text: "Hey there! How can I help you today?"
+  - text: "Hi! What can I do for you?"
+  - text: "Good to see you! How can I assist?"
+  - text: "Hello! How can I assist you today?"
+  - text: "Hey! What brings you here today?"
+  - text: "Hi there! How can I make your day easier?"
+  - text: "Hello! Need help with anything today?"
+  - text: "Hi! What can I help you with today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Stay healthy!"
+  - text: "See you later! Take care and stay healthy!"
+  - text: "Farewell! Wishing you a healthy day ahead!"
+  - text: "Take care! Don't forget to stay healthy!"
+  - text: "Goodbye! Keep yourself healthy and happy!"
+  - text: "See you soon! Take care of yourself!"
+  - text: "Catch you later! Stay strong and healthy!"
+  - text: "Bye for now! Wishing you all the best!"
+  - text: "Goodbye! Stay well and take care!"
+  - text: "See you later! Stay fit and healthy!"
+  - text: "Take care! Wishing you good health and happiness!"
+  - text: "Goodbye! Be well and take care!"
+  - text: "Catch you soon! Stay healthy and take care!"
+  - text: "See you next time! Keep yourself well and safe!"
+  - text: "Farewell! Take care and stay strong!"
+
+  utter_thank_you:
+  - text: "You're welcome!"
+  - text: "No problem! Happy to help!"
+  - text: "Anytime! Glad I could assist!"
+  - text: "You're very welcome!"
+  - text: "It’s my pleasure!"
+  - text: "You're welcome! Let me know if you need anything else."
+  - text: "Happy to help! Anytime!"
+  - text: "It's all good! I’m here if you need more help."
+  - text: "No worries, I’ve got you covered!"
+  - text: "You're welcome! Don't hesitate to ask if you need anything else."
+  - text: "It was my pleasure to assist you!"
+  - text: "You're very welcome! Let me know if you need further help."
+  - text: "Glad to help! Reach out anytime."
+  - text: "You're welcome! Feel free to ask again if needed."
+  - text: "Always happy to help!"
+
+
+  utter_reply_question_permission:
+    - text: "Of course! What's your question?"
+    - text: "Sure, go ahead!"
+    - text: "I'm listening, what's on your mind?"
+    - text: "Feel free to ask!"
+    - text: "Absolutely! What's your question?"
+    - text: "Yeah, what's up?"
+    - text: "Go ahead, I'm here to help!"
+    - text: "Ask away! I'm ready to assist."
+    - text: "Sure thing! What do you need help with?"
+    - text: "Yes, of course! What’s your question?"
+    - text: "I’m all ears! What’s your question?"
+    - text: "Go ahead and ask! I’ll do my best to help."
+    - text: "Feel free to ask me anything!"
+    - text: "Absolutely, I’m here to help! What’s your question?"
+    - text: "Sure, I’d be happy to answer your question!"
+    - text: "Yes, please ask your question!"
+    - text: "Of course, I’m here to assist! What’s your question?"
+    - text: "Go ahead, I’m listening!"
+    - text: "Ask your question, I’m ready to help!"
+    - text: "Yes, feel free to ask me anything!"
+
+
+  utter_reply_how_you_are:
+  - text: "I'm good, thanks for asking! How can I assist you today?"
+  - text: "I'm doing well, thank you! What can I help you with?"
+  - text: "I'm great, thanks! How can I assist you today?"
+  - text: "I'm doing well, thank you! How can I help you today?"
+  - text: "I'm good, thanks! What can I do for you today?"
+  - text: "I'm doing well, thanks! How can I assist you?"
+  - text: "I'm great, thanks for asking! What can I help you with?"
+  - text: "I'm doing well, thank you! What can I assist you with today?"
+  - text: "I'm good, thanks! How can I help you today?"
+  - text: "I'm doing well, thank you! How can I assist you today?"
+  - text: "I'm great, thanks for asking! What can I do for you today?"
+  - text: "Things are great, thanks! How can I assist you?"
+  - text: "I'm doing well, thank you! What can I help you with today?"
+  - text: "I'm good, thanks for asking! How can I help you today?"
+  - text: "I'm great, thanks for asking! How about you?"
+  - text: "I'm doing well, thank you! How are you?"
+  - text: "I'm fine, thanks! How's things with you?"
+  - text: "I'm doing well, thank you! What about you?"
+  - text: "I'm good, thanks! How are you doing?"
+  - text: "Im great, thanks for asking! How's everything with you?"
+  - text: "I'm doing well, thank you! How's your day going?"
+
+
+  utter_end_formalities:
+  - text: "That's brilliant, Glad to hear it! How may I assist you today?"
+  - text: "That's great to hear! How can I help you today?"
+  - text: "That's wonderful! How can I assist you today?"
+  - text: "That's fantastic! How can I help you today?"
+  - text: "That's awesome! How can I assist you today?"
+  - text: "That's amazing! How can I help you today?"
+  - text: "That's excellent! How can I assist you today?"
+  - text: "superb! How can I help you today?"
+  
+  utter_out_of_scope:
+  - text: "I'm only here to help with nutrition-related questions."
+  - text: "Sorry, that's outside of my scope. I can assist with nutrition inquiries."
+  - text: "I can only help with nutrition-related topics. Let me know if you need help with that!"
+  - text: "That’s beyond my area of expertise, but I’m happy to help with anything nutrition-related!"
+  - text: "I can only assist with questions related to food and nutrition."
+  - text: "Sorry, I can’t help with that, but feel free to ask about nutrition!"
+  - text: "I’m focused on nutrition questions! Let me know if you need help with that."
+  - text: "I can only answer nutrition-related queries. How can I assist with that?"
+  - text: "Nutrition questions are my specialty. What can I help you with?"
+  - text: "I can only assist with nutrition-related matters. Please ask away!"
+  - text: "I’m here to help with nutrition. If you need advice on that, feel free to ask!"
+  - text: "My expertise is in nutrition, so feel free to ask me anything in that area."
+  - text: "Sorry, I can’t help with that. Ask me about nutrition, though!"
+  - text: "Nutrition-related questions are my thing! Let me know if you need help with those."
+  - text: "I’m here to provide information on food and nutrition. How can I assist?"
+
+
+  utter_no_food_found:
+  - text: "I couldn't find the food item you mentioned."
+  - text: "Sorry, I didn't catch the food you're asking about."
+  - text: "I wasn't able to find that food. Could you try again?"
+  - text: "I couldn't locate the food you're referring to. Could you specify it again?"
+  - text: "Sorry, I couldn't find any details on that food."
+  - text: "I wasn’t able to find that food item in my database. Can you try another one?"
+  - text: "Hmm, I couldn’t find that food. Please check the name and try again."
+  - text: "It seems I couldn't locate the food you mentioned. Could you clarify?"
+  - text: "I wasn't able to identify that food. Can you provide more details?"
+  - text: "That food seems unfamiliar to me. Would you mind trying a different one?"
+  - text: "I couldn't find anything matching the food name you provided. Please try again."
+  - text: "Sorry, I didn’t find the food you mentioned. Could you check the spelling?"
+  - text: "I couldn't match that food to anything in my database. Can you try again?"
+  - text: "I didn't find the food you're asking for. Would you like to try another?"
+  - text: "Unfortunately, I couldn't find that food. Could you specify the food again?"
+
+
+  utter_no_nutrition_info:
+  - text: "Sorry, I couldn't find the {nutrient} information for {food}."
+  - text: "I wasn’t able to retrieve {nutrient} data for {food}."
+  - text: "I couldn't find the {nutrient} details for {food}. Please check the name."
+  - text: "Unfortunately, I couldn't find {nutrient} information for {food}. Could you try another?"
+  - text: "Sorry, I couldn't retrieve the {nutrient} data for {food}. Would you like to try another food?"
+  - text: "I was unable to get {nutrient} info for {food}. Can you specify it again?"
+  - text: "There was an issue finding the {nutrient} data for {food}. Can you try another name?"
+  - text: "I couldn't retrieve the {nutrient} information for {food}. Could you clarify the food?"
+  - text: "Sorry, I couldn't find {nutrient} details for {food}. Maybe try a different food?"
+  - text: "I couldn’t get {nutrient} information for {food}. Would you like to check something else?"
+  - text: "I wasn’t able to find {nutrient} data for {food}. Could you give me a different food?"
+  - text: "Unfortunately, I couldn't locate {nutrient} details for {food}. Can you double-check?"
+  - text: "I couldn’t retrieve {nutrient} details for {food}. Please make sure the food name is correct."
+  - text: "There was an issue retrieving {nutrient} information for {food}. Would you like to try another?"
+  - text: "I couldn’t find {nutrient} data for {food}. Can you specify the food more clearly?"
+
+
+  utter_unit_not_found_default_100g:
+  - text: "I couldn't find the {nutrient} data for {unit} of {food}, but there are approximately {amount} {nutrient} in 100g of {food}."
+  - text: "Couldn't locate {nutrient} info for {unit} of {food}, but roughly {amount} {nutrient} in 100g of {food}."
+  - text: "I wasn’t able to find {nutrient} details for {unit} of {food}, but there are about {amount} {nutrient} per 100g of {food}."
+  - text: "I couldn’t retrieve the {nutrient} info for {unit} of {food}, but around {amount} {nutrient} is found in 100g of {food}."
+  - text: "Unfortunately, I couldn't find {nutrient} data for {unit} of {food}, but 100g of {food} contains approximately {amount} {nutrient}."
+  - text: "I wasn't able to locate {nutrient} information for {unit} of {food}, but approximately {amount} {nutrient} in 100g of {food}."
+  - text: "I couldn't get {nutrient} data for {unit} of {food}, but there are roughly {amount} {nutrient} in 100g."
+  - text: "Unfortunately, I couldn't retrieve {nutrient} info for {unit} of {food}, but in 100g of {food}, you'll find about {amount} {nutrient}."
+  - text: "Sorry, I couldn’t find {nutrient} details for {unit} of {food}, but there are approximately {amount} {nutrient} in 100g."
+  - text: "I wasn’t able to find {nutrient} info for {unit} of {food}, but in 100g of {food}, you’d have roughly {amount} {nutrient}."
+  - text: "I couldn’t find {nutrient} data for {unit} of {food}, but 100g of {food} contains about {amount} {nutrient}."
+  - text: "I couldn’t locate {nutrient} details for {unit} of {food}, but there are approximately {amount} {nutrient} in every 100g of {food}."
+  - text: "Unfortunately, I couldn’t retrieve {nutrient} info for {unit} of {food}, but about {amount} {nutrient} in 100g."
+  - text: "Sorry, I wasn't able to find {nutrient} data for {unit} of {food}, but there are around {amount} {nutrient} in 100g."
+  - text: "I wasn’t able to retrieve {nutrient} information for {unit} of {food}, but there are about {amount} {nutrient} per 100g of {food}."
+
+  utter_quantity_found:
+  - text: "There are approximately {amount} {nutrient} in {quantity}g of {food}."
+  - text: "Around {amount} {nutrient} in {quantity} grams of {food}."
+  - text: "You'll find about {amount} {nutrient} in {quantity}g of {food}."
+  - text: "Approximately {amount} {nutrient} is in {quantity}g of {food}."
+  - text: "In {quantity}g of {food}, there are about {amount} {nutrient}."
+  - text: "Roughly {amount} {nutrient} can be found in {quantity}g of {food}."
+  - text: "In {quantity} grams of {food}, you'll have around {amount} {nutrient}."
+  - text: "About {amount} {nutrient} is in {quantity}g of {food}."
+  - text: "There’s approximately {amount} {nutrient} in {quantity}g of {food}."
+  - text: "For {quantity}g of {food}, you’ll have around {amount} {nutrient}."
+  - text: "Approximately {amount} {nutrient} are in {quantity}g of {food}."
+  - text: "You can expect around {amount} {nutrient} in {quantity}g of {food}."
+  - text: "Around {amount} {nutrient} is found in {quantity} grams of {food}."
+  - text: "In {quantity} grams of {food}, there’s approximately {amount} {nutrient}."
+  - text: "In {quantity}g of {food}, there is roughly {amount} of {nutrient}."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

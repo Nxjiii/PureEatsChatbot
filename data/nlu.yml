@@ -1,0 +1,396 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+      - good evening
+      - howdy
+      - greetings
+      - wassup
+      - hey there
+      - hi there
+      - good day
+      - yo
+      - salut
+      - hiya
+
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - talk to you later
+      - see ya
+      - take care
+      - have a nice day
+      - catch you later
+      - farewell
+      - so long
+      - bye bye
+      - adios
+      - later
+      - peace out
+      - until next time
+      - ciao
+      - in a bit
+      - have a good one
+      - I'm off
+      - I'm out
+      - I'm leaving
+      - I'm heading out
+      - see you soon
+
+
+  - intent: thank_you
+    examples: |
+      - thanks
+      - thank you
+      - cheers
+      - much appreciated
+      - thanks a lot
+      - thanks so much
+      - I appreciate it
+      - I'm grateful
+      - thank you very much
+      - many thanks
+      - thanks for your help
+      - thanks for your assistance
+      - I owe you one
+      - I'm thankful
+      - I can't thank you enough
+      - you're the best
+      - you're awesome
+      - I appreciate your help
+      - I appreciate your assistance
+      - I appreciate it a lot
+      - I appreciate your support
+      - safe
+      - ty
+      - thx
+
+
+  - intent: out_of_scope
+    examples: |
+      - tell me a joke
+      - what's the weather?
+      - who's the president?
+      - what's 2+2?
+      - sing me a song.
+      - tell me a story.
+      - what's your favorite color?
+      - can you dance?
+      - do you have a pet?
+      - how old are you?
+
+
+
+
+  - intent: ask_question_permission
+    examples: |
+      - can I ask you a question?
+      - may I ask something?
+      - can I ask a quick question?
+      - is it okay if I ask you a question?
+      - can I check something with you?
+      - mind if I ask something?
+      - I have a question for you
+      - could I ask you something?
+      - can I run a question by you?
+      - is it alright if I ask you something?
+      - can I ask you something?
+      - may I ask you a question?
+      - I have a question.
+      - can I ask you a quick question?
+      - is it okay if I ask you a question?
+      - can I check something with you?
+      - let me ask you something.
+      - let me ask you a question.
+      - can I quickly ask you something?
+
+
+  - intent: respond_to_how_you_are
+    examples: |
+      - I'm good thanks!
+      - Doing well doing great!
+      - I'm fine thank you!
+      - All good here!
+      - I'm doing great thanks for asking!
+      - Feeling good.
+      - I'm doing well.
+      - I'm doing okay thanks!
+      - I'm doing alright thanks!
+      - I'm doing just fine thanks!
+      - I'm doing well.
+      - I'm okay how are you?
+      - Everything's going well thanks!
+      - I'm doing well thank you!
+      - I'm alright.
+      - I'm great.
+      - I'm buzzing.
+      - I'm brilliant.
+      - I'm doing brilliant.
+      - I'm doing fantastic.
+      - I'm doing awesome.
+      - I'm feeling splendid.
+      - I'm feeling terrific.
+      - I'm feeling wonderful.
+      - I'm feeling fabulous.
+      - I'm feeling amazing.
+      - I'm super happy.
+      - I'm doing just fine thanks for asking!
+
+  - intent: ask_how_you_are
+    examples: |
+      - how are you?
+      - how's it going?
+      - what's up?
+      - how's it going with you?
+      - how are you doing?
+      - how have you been?
+      - how's everything?
+      - how's life?
+      - how are things?
+      - how do you do?
+      - how's your day going?
+      - how's your week been?
+      - how are you feeling today?
+      - what's up with you?
+      - how's your day treating you?
+      - how's your week treating you?
+      - how's your day so far?
+      - how's your week so far?
+      - how's your day been?
+      - how's your week going?
+      - how's your day treating you?
+      - how's your week treating you?
+
+  - intent: ask_calories
+    examples: |
+      - How many calories are in an [apple](food)?
+      - Calories in a [banana](food)?
+      - What’s the calorie count for a [sandwich](food)?
+      - Tell me the calories in [rice](food)
+      - How much calories does [chicken](food) have?
+      - Can you tell me the calories in a [slice](unit) of [pizza](food)?
+      - How many calories are in a [bowl of soup](food)?
+      - What’s the cal content of a [chocolate bar](food)?
+      - Calories in a [cup](unit) of [coffee with milk](food)?
+      - How many calories does a [burger](food) have?
+      - What’s the calorie count for a serving of [pasta](food)?
+      - [160] [grams](unit) of [broccoli](food) Cals?
+      - [150] [grams](unit) of [carrots](food) Calories?
+      - How many calories are in a [glass](unit) of [orange juice](food)?
+      - Calories in a small bag of [chips](food)?
+      - How much energy does a [boiled egg](food) provide?
+      - What’s the cal value of a [piece](unit) of [cake](food)?
+      - Can you tell me the calories in a [grilled fish](food)?
+      - How many calories are in a [cup](unit) of [yogurt](food)?
+      - What’s the calorie count for a [baked potato](food)?
+      - Calories in a handful of [nuts](food)?
+      - How much calories does a [smoothie](food) have?
+      - How many calories are in [200](quantity) [grams](unit) of [chicken](food)?
+      - Calories in [150](quantity) [grams](unit) of [banana](food)?
+      - What’s the calorie count for [100](quantity) [grams](unit) of [rice](food)?
+      - [250](quantity) [grams](unit) of [pasta](food) Cals?
+      - How much calories does [300](quantity) [grams](unit) of [beef](food) have?
+      - Can you tell me the calories in [50](quantity) [grams](unit) of [cheese](food)?
+      - How many calories are in [1](quantity) [gram](unit) of [butter](food)?
+      - What’s the calorie content of [500](quantity) [grams](unit) of [potatoes](food)?
+      - Calories in [2](quantity) [grams](unit) of [chocolate](food)?
+      - How much energy does [100](quantity) [grams](unit) of [fish](food) provide?
+      - How many calories are in [one](quantity) [slice](unit) of [pizza](food)?
+      - Calories in [two](quantity) [slices](unit) of [bread](food)?
+      - What’s the cal count for [one](quantity) [piece](unit) of [cake](food)?
+      - Tell me the calories in [three](quantity) [pieces](unit) of [chocolate](food)
+      - How much calories does [a](quantity) [cup](unit) of [rice](food) have?
+      - Can you tell me the calories in [two](quantity) [cups](unit) of [pasta](food)?
+      - How many calories are in [one](quantity) [tablespoon](unit) of [butter](food)?
+      - What’s the calorie content of [two](quantity) [tablespoons](unit) of [olive oil](food)?
+      - [a](quantity) [handful](unit) of [nuts](food) Calories?
+      - How much energy does [two](quantity) [handfuls](unit) of [popcorn](food) provide?
+      - How many calories are in [100](quantity) [grams](unit) of [chicken](food)?
+      - Calories in [50](quantity) [grams](unit) of [cheese](food)?
+      - calorie count for [one](quantity) [slice](unit) of [apple pie](food)?
+      - Tell me the calories in [two](quantity) [cups](unit) of [milk](food)
+      - How much calories does [a](quantity) [piece](unit) of [fried chicken](food) have?
+      - [220](quantity) [g](unit) of [chicken breast](food) cals? 
+      - calories in [130](quantity) [g](unit) of [salmon](food)? 
+      - cals in [80](quantity) [g](unit) of [tofu](food)?
+      - calories in [300](quantity) [g](unit) of [lentils](food)?
+      - calories in [200](quantity) [g](unit) of [chickpeas](food)?
+      - calories in [400](quantity) [g](unit) of [beef steak](food)?
+    
+  - intent: ask_protein
+    examples: |
+      - How much protein in [chicken breast](food)?
+      - Protein content of [almonds](food)
+      - What is the protein in [tuna](food)?
+      - Tell me protein in [eggs](food)
+      - Protein value of [tofu](food)?
+      - How much protein is in a [glass](unit) of [milk](food)?
+      - Protein in a [slice](unit) of [turkey](food)?
+      - What’s the protein content of [lentils](food)?
+      - Can you tell me the protein in a [steak](food)?
+      - How much protein does a [protein bar](food) have?
+      - Protein in a serving of [quinoa](food)?
+      - What’s the protein value of a [cup](unit) of [beans](food)?
+      - How much protein is in a [salmon fillet](food)?
+      - Protein content of [peanut butter](food)?
+      - What’s the protein in a [hard-boiled egg](food)?
+      - How much protein does a [cup](unit) of [Greek yogurt](food) have?
+      - Protein in a handful of [cashews](food)?
+      - What’s the protein content of a [veggie burger](food)?
+      - Can you tell me the protein in a [slice](unit) of [cheese](food)?
+      - How much protein is in a [cup](unit) of [chickpeas](food)?
+      - How much protein is in [200](quantity) [grams](unit) of [chicken breast](food)?
+      - [120](quantity) [grams](unit) of [Milk](food) Protein?
+      - Protein content of [150](quantity) [grams](unit) of [tofu](food)
+      - What is the protein in [100](quantity) [grams](unit) of [tuna](food)?
+      - Tell me protein in [250](quantity) [grams](unit) of [lentils](food)
+      - Protein value of [300](quantity) [grams](unit) of [beef steak](food)?
+      - How much protein is in [50](quantity) [grams](unit) of [peanut butter](food)?
+      - Protein in [1](quantity) [gram](unit) of [cheese](food)?
+      - What’s the protein content of [500](quantity) [grams](unit) of [quinoa](food)?
+      - Can you tell me the protein in [2](quantity) [grams](unit) of [almonds](food)?
+      - [100](quantity) [grams](unit) of [salmon](food) Protein?
+      - How much protein is in [one](quantity) [slice](unit) of [turkey](food)?
+      - Protein content of [two](quantity) [slices](unit) of [cheese](food)?
+      - What is the protein in [one](quantity) [piece](unit) of [tofu](food)?
+      - Tell me protein in [three](quantity) [pieces](unit) of [chicken](food)
+      - Protein value of [a](quantity) [cup](unit) of [lentils](food)?
+      - How much protein is in [two](quantity) [cups](unit) of [beans](food)?
+      - Protein in [one](quantity) [tablespoon](unit) of [peanut butter](food)?
+      - What’s the protein content of [two](quantity) [tablespoons](unit) of [yogurt](food)?
+      - Can you tell me the protein in [a](quantity) [handful](unit) of [cashews](food)?
+      - Protein in [two](quantity) [handfuls](unit) of [almonds](food)?
+      - How much protein is in [100](quantity) [grams](unit) of [salmon](food)?
+      - [50](quantity) [grams](unit) of [tuna](food) Protein?
+      - What is the protein in [one](quantity) [slice](unit) of [cheddar cheese](food)?
+      - Tell me protein in [two](quantity) [cups](unit) of [milk](food)
+      - Protein value of [a](quantity) [piece](unit) of [steak](food)?
+      - how much protein is in [220](quantity) [g](unit) of [chicken thigh](food)?
+      - how much protein does [130](quantity) [g](unit) of [salmon](food) have?
+      - protein content of [80](quantity) [g](unit) of [tofu](food)?
+      - what is the protein in [300](quantity) [g](unit) of [lentils](food)?
+      - tell me protein in [200](quantity) [g](unit) of [chickpeas](food).
+      - protein value of [400](quantity) [g](unit) of [beef steak](food)?
+  
+
+
+
+  - intent: ask_carbs
+    examples: |
+      - Carbs in [pasta](food)?
+      - How many carbs are in [bread](food)?
+      - What’s the carbohydrate content of [oats](food)?
+      - Carbohydrate value in [potato](food)?
+      - Tell me carbs in [quinoa](food)
+      - How many carbs are in a [slice](unit) of [toast](food)?
+      - Carbs in a [bowl](unit) of [cereal](food)?
+      - What’s the carbohydrate content of a [banana](food)?
+      - How much carbs does a [sweet potato](food) have?
+      - Can you tell me the carbs in a [cup](unit) of [rice](food)?
+      - Carbs in a serving of [spaghetti](food)?
+      - What’s the carbohydrate value of a [muffin](food)?
+      - How many carbs are in a [tortilla](food)?
+      - Carbs in a [baked potato](food)?
+      - What’s the carb content of a [croissant](food)?
+      - How much carbs does a [cup](unit) of [popcorn](food) have?
+      - Carbs in a [slice](unit) of [pizza](food)?
+      - What’s the carbohydrate value of a [bagel](food)?
+      - Can you tell me the carbs in a [cup](unit) of [lentils](food)?
+      - How many carbs are in a serving of [mashed potatoes](food)?
+      - [111](quantity) [grams](unit) of [pickles](food) Carbs?
+      - Carbs in [200](quantity) [grams](unit) of [pasta](food)?
+      - How many carbs are in [150](quantity) [grams](unit) of [bread](food)?
+      - What’s the carbohydrate content of [100](quantity) [grams](unit) of [oats](food)?
+      - Carbohydrate value in [250](quantity) [grams](unit) of [potatoes](food)?
+      - Tell me carbs in [300](quantity) [grams](unit) of [quinoa](food)
+      - How many carbs are in [50](quantity) [grams](unit) of [rice](food)?
+      - Carbs in [1](quantity) [gram](unit) of [popcorn](food)?
+      - What’s the carbohydrate content of [500](quantity) [grams](unit) of [sweet potato](food)?
+      - [2](quantity) [grams](unit) of [chocolate](food) Carbs?
+      - Can you tell me the carbs in [100](quantity) [grams](unit) of [lentils](food)?
+      - Carbs in [one](quantity) [slice](unit) of [bread](food)?
+      - How many carbs are in [two](quantity) [slices](unit) of [toast](food)?
+      - What’s the carbohydrate content of [one](quantity) [piece](unit) of [cake](food)?
+      - Carbohydrate value in [three](quantity) [pieces](unit) of [chocolate](food)?
+      - Tell me carbs in [a](quantity) [cup](unit) of [rice](food)
+      - How many carbs are in [two](quantity) [cups](unit) of [pasta](food)?
+      - Carbs in [one](quantity) [tablespoon](unit) of [honey](food)?
+      - What’s the carbohydrate content of [two](quantity) [tablespoons](unit) of [jam](food)?
+      - How much carbs does [a](quantity) [handful](unit) of [popcorn](food) have?
+      - Carbs in [two](quantity) [handfuls](unit) of [nuts](food)?
+      - What’s the carbohydrate content of [100](quantity) [grams](unit) of [potatoes](food)?
+      - Carbohydrate value in [50](quantity) [grams](unit) of [oats](food)?
+      - Tell me carbs in [one](quantity) [slice](unit) of [pizza](food)
+      - How many carbs are in [two](quantity) [cups](unit) of [milk](food)?
+      - Carbs in [a](quantity) [piece](unit) of [croissant](food)?
+      - [220](quantity) [g](unit) of [pasta](food) Carbohydrates?
+      - carbs in [130](quantity) [g](unit) of [bread](food)?
+      - carbs in [80](quantity) [g](unit) of [oats](food)?
+      - how much carbohydrates in [267](quantity) [g](unit) of [sweet potato](food)? 
+      - how much carbs in [144](quantity) [g](unit) of [quinoa](food)? 
+      - carbs in [400](quantity) [g](unit) of [potato](food)?
+  
+
+  - intent: ask_fats
+    examples: |
+      - Fat in [peanut butter](food)?
+      - How much fat in [cheese](food)?
+      - What’s the fat content of [avocados](food)?
+      - Fat value of [chocolate](food)?
+      - How fatty is [bacon](food)?
+      - How much fat is in a [slice](unit) of [cake](food)?
+      - Fat content of a serving of [fries](food)?
+      - What’s the fat value of a [cup](unit) of [whole milk](food)?
+      - Can you tell me the fat in a [tablespoon](unit) of [olive oil](food)?
+      - How much fat does a [burger](food) have?
+      - Fat in a handful of [almonds](food)?
+      - What’s the fat content of a [slice](unit) of [apple pie](food)?
+      - How much fat is in a serving of [ice cream](food)?
+      - Fat value of a [piece](unit) of [fried chicken](food)?
+      - What’s the fat content of a [cup](unit) of [coconut milk](food)?
+      - How much fat does a [chocolate bar](food) have?
+      - Fat in a serving of [buttered popcorn](food)?
+      - What’s the fat value of a [slice](unit) of [cheddar cheese](food)?
+      - Can you tell me the fat in a [tablespoon](unit) of [peanut butter](food)?
+      - Fat in [200](quantity) [grams](unit) of [peanut butter](food)?
+      - How much fat is in [150](quantity) [grams](unit) of [cheese](food)?
+      - What’s the fat content of [100](quantity) [grams](unit) of [avocado](food)?
+      - [48](quantity) [grams](unit) of [Ranch Sauce](food) Fat?
+      - Fat value of [250](quantity) [grams](unit) of [chocolate](food)?
+      - How fatty is [300](quantity) [grams](unit) of [bacon](food)?
+      - How much fat is in [50](quantity) [grams](unit) of [butter](food)?
+      - Fat content of [1](quantity) [gram](unit) of [olive oil](food)?
+      - What’s the fat value of [500](quantity) [grams](unit) of [ice cream](food)?
+      - Can you tell me the fat in [2](quantity) [grams](unit) of [almonds](food)?
+      - How much fat does [100](quantity) [grams](unit) of [fried chicken](food) have?
+      - Fat in [one](quantity) [slice](unit) of [bacon](food)?
+      - How much fat in [two](quantity) [slices](unit) of [cheese](food)?
+      - What’s the fat content of [one](quantity) [piece](unit) of [fried chicken](food)?
+      - Fat value of [three](quantity) [pieces](unit) of [chocolate](food)?
+      - How fatty is [a](quantity) [cup](unit) of [whole milk](food)?
+      - How much fat is in [two](quantity) [cups](unit) of [ice cream](food)?
+      - Fat content of [one](quantity) [tablespoon](unit) of [butter](food)?
+      - What’s the fat value of [two](quantity) [tablespoons](unit) of [olive oil](food)?
+      - Can you tell me the fat in [a](quantity) [handful](unit) of [almonds](food)?
+      - Fat in [two](quantity) [handfuls](unit) of [cashews](food)?
+      - How much fat is in [100](quantity) [grams](unit) of [avocado](food)?
+      - Fat content of [50](quantity) [grams](unit) of [peanut butter](food)?
+      - [200](quantity) [grams](unit) of [crisps](food) Fat?
+      - What’s the fat value of [one](quantity) [slice](unit) of [apple pie](food)?
+      - Can you tell me the fat in [two](quantity) [cups](unit) of [milk](food)?
+      - Fat in [a](quantity) [piece](unit) of [fried fish](food)?
+      - how much fat is in [220](quantity) [g](unit) of [peanut butter](food)?
+      - how much fat does [130](quantity) [g](unit) of [cheese](food) have? 
+      - fat content of [80](quantity) [g](unit) of [avocado](food)?
+      - what is the fat in [300](quantity) [g](unit) of [chocolate](food)? 
+      - tell me fat in [200](quantity) [g](unit) of [bacon](food).
+      - fat value of [400](quantity) [g](unit) of [butter](food)?
+   
