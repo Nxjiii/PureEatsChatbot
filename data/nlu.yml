@@ -393,4 +393,5 @@ nlu:
       - what is the fat in [300](quantity) [g](unit) of [chocolate](food)? 
       - tell me fat in [200](quantity) [g](unit) of [bacon](food).
       - fat value of [400](quantity) [g](unit) of [butter](food)?
+      - how much fat is in [130](quantity) [g](unit) of [fried cod](food)?
    
