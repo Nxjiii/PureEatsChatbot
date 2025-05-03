@@ -10,10 +10,7 @@ __pycache__/
 
 # Environment files
 .env
-.env.local
-.env.*.local
-.env.prod
-.env.dev
+
 
 # Virtual environments
 venv/
@@ -21,10 +18,8 @@ venv/
 env/
 ENV/
 
-# Rasa specific
-/models/*.tar.gz  # Ignore trained models (they get rebuilt)
-/models/*.gz
-/data/test_*      # Test stories/NLU files
+# Rasa 
+/data/test_*   
 /actions/__pycache__/
 
 # IDE specific
