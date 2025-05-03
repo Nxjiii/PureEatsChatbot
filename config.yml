@@ -17,9 +17,6 @@ pipeline:
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
-- name: "RegexEntityExtractor"
-  case_sensitive: False
-  use_regexes: True
 - name: DIETClassifier
 - name: EntitySynonymMapper
 - name: ResponseSelector
