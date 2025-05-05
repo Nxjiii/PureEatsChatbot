@@ -56,3 +56,8 @@ rules:
     steps:
       - intent: ask_fats
       - action: action_get_fats
+
+  - rule: Get today's nutrition
+    steps:
+      - intent: ask_today_nutrition
+      - action: action_get_today_nutrition

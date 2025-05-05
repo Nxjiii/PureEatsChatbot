@@ -1,4 +1,4 @@
-ersion: "3.1"
+version: "3.1"
 
 intents:
   - greet
@@ -12,36 +12,51 @@ intents:
   - ask_question_permission
   - ask_how_you_are
   - respond_to_how_you_are
+  - ask_today_nutrition
+
 
 entities:
   - food
   - quantity
   - unit
+  - macro
 
 actions:
   - action_get_calories
   - action_get_protein
   - action_get_carbs
   - action_get_fats
+  - action_get_today_nutrition
 
 responses:
   utter_greet:
-  - text: "Hey! How can I help you today?"
-  - text: "Hello! What can I assist you with today?"
-  - text: "Hi there! How can I help you today?"
+  - text: "Hey {name}! How can I help you today?"
+  - text: "Hello {name}! What can I assist you with today?"
+  - text: "Hi there! {name}, how can I help you today?"
   - text: "Hey! What can I do for you today?"
   - text: "Good day! How can I be of service?"
   - text: "Hi! What can I help you with today?"
-  - text: "Hello! What do you need assistance with?"
-  - text: "Greetings! How may I assist you today?"
-  - text: "Hey there! How can I help you today?"
-  - text: "Hi! What can I do for you?"
-  - text: "Good to see you! How can I assist?"
-  - text: "Hello! How can I assist you today?"
-  - text: "Hey! What brings you here today?"
-  - text: "Hi there! How can I make your day easier?"
-  - text: "Hello! Need help with anything today?"
-  - text: "Hi! What can I help you with today?"
+  - text: "Hello {name}! What do you need assistance with?"
+  - text: "Greetings, {name}! How may I assist you today?"
+  - text: "Hey there, {name}! How can I help you today?"
+  - text: "Hi, {name}! What can I do for you?"
+  - text: "Good to see you {name}! How can I assist?"
+  - text: "Hello {name}! How can I assist you today?"
+  - text: "Hey {name}! What brings you here today?"
+  - text: "Hi there {name}! How can I make your day easier?"
+  - text: "Hello {name}! Need help with anything today?"
+  - text: "Hi {name}! What can I help you with today?"
+  - text: "Hey {name}! How can I assist you today?"
+  - text: "Yo {name}! What's up? How can I help?"
+  - text: "Hiya {name}! What’s on your mind?"
+  - text: "Hey {name}! What’s good? How can I help?"
+  - text: "What’s up, {name}? How can I assist you today?"
+  - text: "Hey {name}! Need a hand with something?"
+  - text: "Hi {name}! What’s cooking? How can I help?"
+  - text: "Hey {name}! What’s happening? How can I assist?"
+  - text: "Yo {name}! How’s it going? What can I do for you?"
+  - text: "Hi {name}! What’s the plan? How can I help?"
+  - text: "Hey {name}! What’s new? How can I assist you today?"
 
   utter_goodbye:
   - text: "Goodbye! Stay healthy!"
@@ -222,6 +237,32 @@ responses:
   - text: "Around {amount} {nutrient} is found in {quantity} grams of {food}."
   - text: "In {quantity} grams of {food}, there’s approximately {amount} {nutrient}."
   - text: "In {quantity}g of {food}, there is roughly {amount} of {nutrient}."
+
+
+  utter_today_nutrition:
+  - text: "You've consumed approximately {calories} calories today."
+  - text: "Your protein intake today is around {protein} grams."
+  - text: "So far, you've had about {fats} grams of fat today."
+  - text: "You've consumed approximately {carbs} grams of carbohydrates today."
+  - text: "Today you've consumed {calories} calories, {protein}g protein, {carbs}g carbs, and {fats}g fat."
+
+  utter_no_logs_found:
+  - text: "I couldn't find any logs for today."
+  - text: "It seems there are no logs available for today."
+  - text: "I wasn't able to find any logs for today."
+  - text: "I couldn't locate any logs for today."
+  - text: "I couldn't find any records for today."
+  - text: "I wasn't able to retrieve any logs for today."
+  - text: "I couldn't find any entries for today."
+  - text: "I wasn't able to find any records for today."
+  - text: "I couldn't find any entries for today."
+
+  utter_logfetch_not_work:
+  - text: "Problem on my end, apologies."
+
+
+
+
 
 session_config:
   session_expiration_time: 60

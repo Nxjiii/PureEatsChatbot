@@ -1,9 +1,8 @@
 FROM python:3.8.16-slim
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# system dependencies required to build some Python packages
+# System dependencies to build Python packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     gcc \
@@ -12,20 +11,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# pip global timeout to help with slow downloads
+# Set pip global timeout
 RUN pip config set global.timeout 100
 
 # Upgrade pip
 RUN python -m pip install --upgrade pip
 
-# Copy the project files into the container
+# Copy project files
 COPY . /app
 
-# Install Python dependencies 
+# Install Python dependencies
 RUN pip install -v --no-cache-dir -i https://pypi.org/simple -r requirements.txt
 
-# Expose port for the Rasa model server
-EXPOSE 5005
+# Clean up
+RUN apt-get clean && rm -rf /root/.cache
 
-# exec form of CMD to ensure proper signal handling
-CMD ["rasa", "run", "--model", "/app/models", "--enable-api", "--cors", "*", "--port", "5005"]
+# Create entrypoint script
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Use entrypoint script
+ENTRYPOINT ["/app/entrypoint.sh"]

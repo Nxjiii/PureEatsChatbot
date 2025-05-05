@@ -396,3 +396,59 @@ nlu:
       - fat value of [400](quantity) [g](unit) of [butter](food)?
       - how much fat is in [130](quantity) [g](unit) of [fried cod](food)?
    
+  - intent: ask_today_nutrition
+    examples: |
+      - How many [calories](macro) have I eaten today?
+      - How many [calories](macro) did I have today?
+      - What’s my [calorie](macro) count for today? 
+      - How much [calories](macro) am I up to today? 
+      - How many [calories](macro) did I consume today?
+      - Can you tell me how many [calories](macro) I've had today?
+      - What’s the total [calories](macro) I’ve consumed today?
+      - How much [calories](macro) have I taken in today?
+      - How much [fat](macro) have I eaten today?
+      - How many [fats](macro) did I consume today?
+      - How much [fat](macro) is in my food today?
+      - What’s my [fat](macro) intake today? 
+      - How much [fat](macro) have I had today?
+      - Can you tell me my [fat](macro) intake for today?
+      - How many [grams of fat](macro) did I consume today?
+      - What’s my total [fat](macro) intake today?
+      - How much [protein](macro) have I consumed today?
+      - How many [proteins](macro) did I eat today?
+      - How much [protein](macro) did I have today?
+      - Can you tell me how much [protein](macro) I’ve had today?
+      - How much [protein](macro) have I ingested today?
+      - What’s my [protein](macro) intake today?
+      - How many grams of [protein](macro) have I eaten today?
+      - How much [protein](macro) is in my diet today?
+      - How many [carbs](macro) have I eaten today?
+      - How much [carbs](macro) have I consumed today?
+      - What’s my [carb](macro) intake like today?
+      - How much [carbs](macro) did I have today?
+      - Can you give me the total [carbs](macro) I’ve eaten today? 
+      - How many [carbohydrates](macro) did I eat today?
+      - How much [carbs](macro) am I up to today?
+      - What’s the total [carbs](macro) in my diet today?  
+      - How much have I [eaten](macro) today?
+      - What’s my [eating](macro) looking like today?
+      - Can you tell me what my [nutrition](macro) is for today?
+      - How’s my [nutrition](macro) today?
+      - What’s my [food intake](macro) today? 
+      - How much [food](macro) have I had today?
+      - [Macro](macro) breakdown for today?
+      - How’s my [diet](macro) today? 
+      - How many [nutrients](macro) have I consumed today?
+      - How much [nutrition](macro) did I get today?
+      - What’s my [nutrition](macro) looking like so far today?
+      - How are my [macros](macro) today?
+      - Can you give me a breakdown of my [nutrition](macro) today?
+      - How much have I [consumed](macro) today in terms of nutrition?
+      - How much of each [macro](macro) did I have today?
+      - What’s the total [macro](macro) intake today?
+      - How’s my [eating habits](macro) today?
+              
+
+
+
+
