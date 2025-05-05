@@ -27,12 +27,13 @@ actions:
   - action_get_carbs
   - action_get_fats
   - action_get_today_nutrition
+  - action_greet_user
 
 responses:
   utter_greet:
   - text: "Hey {name}! How can I help you today?"
   - text: "Hello {name}! What can I assist you with today?"
-  - text: "Hi there! {name}, how can I help you today?"
+  - text: "Hi there {name}, how can I help you today?"
   - text: "Hey! What can I do for you today?"
   - text: "Good day! How can I be of service?"
   - text: "Hi! What can I help you with today?"

@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
-  url: ${ACTIONS_SERVER_URL}
+  url: "http://localhost:5055/webhook"
 
 # REST input channel for handling messages
 rest:
